@@ -25,6 +25,25 @@ const Navigation = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    // Only apply smooth scroll to anchor links (starting with #)
+    if (href.startsWith("#")) {
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+      setIsMobileMenuOpen(false);
+    } else {
+      // For non-anchor links (like /alumni), use regular navigation
+      window.location.href = href;
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -49,6 +68,7 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.name}
@@ -93,8 +113,8 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="block text-foreground hover:text-primary transition-colors font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </a>

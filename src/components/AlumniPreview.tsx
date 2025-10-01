@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
+import Jaffer from "@/assets/Jaffer.jpg";
 
 const AlumniPreview = () => {
   const successStories = [
@@ -15,8 +16,8 @@ const AlumniPreview = () => {
       name: "Mohammed Farhan",
       year: "Class of 2012",
       achievement: "Software Engineer at Tech Mahindra",
-      story: "The foundation in English and computer education I received here opened doors to opportunities I never imagined possible.",
-      image: "👨‍💻"
+      story: "My years at this school have been a wonderful journey of learning and growth. The principal, teachers, and staff have always been supportive, approachable, and truly dedicated to the success of every student. Their constant encouragement not only strengthened my academics but also helped me build confidence and values that I will carry for life. I feel proud and grateful to have been part of such a caring and inspiring school community.",
+      image: Jaffer
     },
     {
       name: "Fatima Khanum",
@@ -48,9 +49,11 @@ const AlumniPreview = () => {
               className="bg-card rounded-2xl p-6 shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-4xl mb-4 mx-auto">
-                {story.image}
-              </div>
+              <img
+                src={story.image}
+                alt="story"
+                className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-4xl mb-4 mx-auto object-cover p-1"
+              />
               <h3 className="text-xl font-bold text-center mb-2">{story.name}</h3>
               <p className="text-primary text-sm text-center mb-1">{story.achievement}</p>
               <p className="text-xs text-muted-foreground text-center mb-4">{story.year}</p>

@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="text-primary font-semibold text-sm">📚 Since 1985</span>
             </div>
             <h1 className="mb-6 leading-tight">
-              We Prepare Your <span className="text-primary">Child</span> For Life
+             Every Child holds <span className="text-primary">Potential</span> we help them shine.
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl">
               Founded in 1985, Bintul-Huda Memorial School has been a beacon of hope and opportunity, 
@@ -25,11 +25,11 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg group">
-                Get Started Today
+                Get Admission
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Take a Tour
+                Learn More
               </Button>
             </div>
             

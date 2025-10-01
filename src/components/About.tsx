@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import studentImage from "@/assets/student-studying.jpg";
+import studentImage from "@/assets/studying.jpg";
 
 const About = () => {
   const highlights = [

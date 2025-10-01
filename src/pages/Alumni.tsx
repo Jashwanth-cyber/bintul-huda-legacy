@@ -66,7 +66,42 @@ const Alumni = () => {
       story: "The discipline and analytical thinking developed at Bintul-Huda helped me excel in finance. As a CA, I now help businesses grow while giving back to my community.",
       image: "👨‍💼",
       category: "Finance"
-    }
+    },{
+      name: "Dr. Ayesha Rahman",
+      year: "Class of 2008",
+      achievement: "Medical Doctor at Apollo Hospital",
+      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
+      image: "👨‍⚕️",
+      category: "Healthcare"
+    },{
+      name: "Dr. Ayesha Rahman",
+      year: "Class of 2008",
+      achievement: "Medical Doctor at Apollo Hospital",
+      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
+      image: "👨‍⚕️",
+      category: "Healthcare"
+    },{
+      name: "Dr. Ayesha Rahman",
+      year: "Class of 2008",
+      achievement: "Medical Doctor at Apollo Hospital",
+      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
+      image: "👨‍⚕️",
+      category: "Healthcare"
+    },{
+      name: "Dr. Ayesha Rahman",
+      year: "Class of 2008",
+      achievement: "Medical Doctor at Apollo Hospital",
+      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
+      image: "👨‍⚕️",
+      category: "Healthcare"
+    },{
+      name: "Dr. Ayesha Rahman",
+      year: "Class of 2008",
+      achievement: "Medical Doctor at Apollo Hospital",
+      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
+      image: "👨‍⚕️",
+      category: "Healthcare"
+    },
   ];
 
   const stats = [
@@ -90,7 +125,7 @@ const Alumni = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
@@ -101,7 +136,7 @@ const Alumni = () => {
               Back to Home
             </Button>
           </Link>
-          
+
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
               <GraduationCap className="w-5 h-5 text-primary" />
@@ -109,7 +144,7 @@ const Alumni = () => {
             </div>
             <h1 className="mb-6">Our Alumni Success Stories</h1>
             <p className="text-lg text-muted-foreground">
-              For nearly four decades, Bintul-Huda Memorial School has been shaping futures. 
+              For nearly four decades, Bintul-Huda Memorial School has been shaping futures.
               Our alumni stand as proud testimonies to the quality education and values we impart.
             </p>
           </div>
@@ -140,9 +175,11 @@ const Alumni = () => {
                 className="bg-card rounded-2xl p-8 shadow-lg border border-border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-5xl mb-6 mx-auto">
-                  {alumni.image}
-                </div>
+                <img
+                  src={alumni.image}
+                  alt="story"
+                  className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-4xl mb-4 mx-auto object-cover"
+                />
                 <div className="text-center mb-4">
                   <h3 className="text-xl font-bold mb-2">{alumni.name}</h3>
                   <p className="text-primary font-semibold mb-1">{alumni.achievement}</p>
@@ -162,7 +199,7 @@ const Alumni = () => {
           <Pagination>
             <PaginationContent>
               <PaginationItem>
-                <PaginationPrevious 
+                <PaginationPrevious
                   onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
                   className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
                 />
@@ -179,7 +216,7 @@ const Alumni = () => {
                 </PaginationItem>
               ))}
               <PaginationItem>
-                <PaginationNext 
+                <PaginationNext
                   onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
                   className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
                 />
