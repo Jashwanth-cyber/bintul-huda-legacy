@@ -1,10 +1,23 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, ArrowLeft, Briefcase, Award, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 const Alumni = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
   const allAlumni = [
     {
       name: "Dr. Ayesha Rahman",
@@ -63,6 +76,17 @@ const Alumni = () => {
     { icon: Heart, value: "30+", label: "Alumni Contributors" }
   ];
 
+  // Pagination logic
+  const totalPages = Math.ceil(allAlumni.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentAlumni = allAlumni.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -109,8 +133,8 @@ const Alumni = () => {
       {/* Alumni Stories */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {allAlumni.map((alumni, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {currentAlumni.map((alumni, index) => (
               <div
                 key={index}
                 className="bg-card rounded-2xl p-8 shadow-lg border border-border hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
@@ -133,6 +157,35 @@ const Alumni = () => {
               </div>
             ))}
           </div>
+
+          {/* Pagination */}
+          <Pagination>
+            <PaginationContent>
+              <PaginationItem>
+                <PaginationPrevious 
+                  onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
+                  className={currentPage === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                />
+              </PaginationItem>
+              {[...Array(totalPages)].map((_, i) => (
+                <PaginationItem key={i}>
+                  <PaginationLink
+                    onClick={() => handlePageChange(i + 1)}
+                    isActive={currentPage === i + 1}
+                    className="cursor-pointer"
+                  >
+                    {i + 1}
+                  </PaginationLink>
+                </PaginationItem>
+              ))}
+              <PaginationItem>
+                <PaginationNext 
+                  onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
+                  className={currentPage === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                />
+              </PaginationItem>
+            </PaginationContent>
+          </Pagination>
         </div>
       </section>
 
