@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { useTheme } from "next-themes";
 import Footer from "@/components/Footer";
+import schoolLogo from "@/assets/school-logo.png"; // Replace with your actual logo image path
 
 const Admission = () => {
   const [formData, setFormData] = useState({
@@ -80,9 +81,13 @@ const Admission = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.location.href = "/"}>
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">BH</span>
-              </div>
+             <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+              <img
+                src={schoolLogo}
+                alt="Bintul-Huda Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
               <div className="flex flex-col">
                 <span className="font-bold text-base text-foreground">Bintul-Huda</span>
                 <span className="text-xs text-muted-foreground">Memorial English School</span>
