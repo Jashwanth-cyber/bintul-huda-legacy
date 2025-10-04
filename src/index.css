@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 15%;
 
-    --primary: 262 83% 58%;
+    --primary: 205 85% 55%; /* Changed to blue matching the logo */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 199 89% 48%;
@@ -34,23 +34,23 @@ All colors MUST be HSL.
 
     --border: 220 20% 92%;
     --input: 220 20% 92%;
-    --ring: 262 83% 58%;
+    --ring: 205 85% 55%; /* Updated to match primary blue */
 
     --radius: 1rem;
 
     /* Custom gradients */
     --gradient-hero: linear-gradient(135deg, hsl(220 30% 98%) 0%, hsl(240 50% 96%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(280 70% 60%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(205 85% 55%) 0%, hsl(205 85% 65%) 100%); /* Updated to blue gradient */
     --gradient-cool: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(210 100% 56%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(262 83% 58%) 50%, hsl(280 70% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(205 85% 55%) 50%, hsl(205 85% 65%) 100%); /* Updated to include blue */
     
     /* Smooth transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px rgba(123, 97, 255, 0.15);
-    --shadow-hover: 0 8px 30px rgba(123, 97, 255, 0.25);
+    --shadow-soft: 0 4px 20px rgba(0, 119, 182, 0.15); /* Adjusted shadow to match blue */
+    --shadow-hover: 0 8px 30px rgba(0, 119, 182, 0.25); /* Adjusted shadow to match blue */
 
     --radius: 1rem;
 
@@ -68,7 +68,7 @@ All colors MUST be HSL.
 
     --sidebar-border: 220 13% 91%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 205 85% 55%; /* Updated to match primary blue */
   }
 
   .dark {
@@ -81,7 +81,7 @@ All colors MUST be HSL.
     --popover: 220 25% 12%;
     --popover-foreground: 220 20% 95%;
 
-    --primary: 262 83% 58%;
+    --primary: 205 85% 55%; /* Changed to blue matching the logo */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 199 89% 48%;
@@ -98,7 +98,7 @@ All colors MUST be HSL.
 
     --border: 220 25% 22%;
     --input: 220 25% 22%;
-    --ring: 262 83% 58%;
+    --ring: 205 85% 55%; /* Updated to match primary blue */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -106,7 +106,7 @@ All colors MUST be HSL.
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 205 85% 55%; /* Updated to match primary blue */
   }
 }
 

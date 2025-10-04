@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import schoolLogo from "@/assets/school-logo.png"; // Replace with your actual logo image path
 
 const Footer = () => {
   return (
@@ -8,9 +9,16 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-primary-foreground font-bold">BH</span>
-              </div>
+              </div> */}
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+              <img
+                src={schoolLogo}
+                alt="Bintul-Huda Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
               <div>
                 <h3 className="font-bold text-lg">Bintul-Huda</h3>
                 <p className="text-xs opacity-80">Memorial English School</p>
