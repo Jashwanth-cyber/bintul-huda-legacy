@@ -29,8 +29,8 @@ const Hero = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
              <Link to="/gallery">
-              " <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                 Know More
+               <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                Know More
                </Button>
              </Link>
             </div>
