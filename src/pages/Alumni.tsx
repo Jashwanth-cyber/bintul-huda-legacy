@@ -14,7 +14,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
-const Alumni = () => {
+export default function Alumni() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
@@ -138,7 +138,7 @@ const Alumni = () => {
             </div>
             <h1 className="mb-6">Our Alumni Success Stories</h1>
             <p className="text-lg text-muted-foreground">
-              For nearly four decades, Bintul-Huda Memorial English School has been shaping futures.
+              For nearly four decades, Bintul-Huda Memorial School has been shaping futures.
               Our alumni stand as proud testimonies to the quality education and values we impart.
             </p>
           </div>
@@ -238,4 +238,4 @@ const Alumni = () => {
   );
 };
 
-export default Alumni;
+

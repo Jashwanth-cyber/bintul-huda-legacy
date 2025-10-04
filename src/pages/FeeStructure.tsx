@@ -13,7 +13,7 @@ import primaryImg from "@/assets/studying.jpg"; // e.g., classroom with primary 
 import middleImg from "@/assets/studying.jpg"; // e.g., group study for middle school
 import secondaryImg from "@/assets/studying.jpg"; // e.g., high school students in lab
 
-const Navigation = () => {
+export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -265,4 +265,3 @@ const FeeStructure = () => {
   );
 };
 
-export default FeeStructure;
