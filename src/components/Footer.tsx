@@ -13,7 +13,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Bintul-Huda</h3>
-                <p className="text-xs opacity-80">Memorial School</p>
+                <p className="text-xs opacity-80">Memorial English School</p>
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <p className="text-sm opacity-80">
-                  Alipur, Kolar District<br />
+                  Alipur, Chikkaballapur District<br />
                   Karnataka, India
                 </p>
               </div>
@@ -73,10 +73,10 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm opacity-80">
-              © 2024 Bintul-Huda Memorial School. All rights reserved.
+              © 2025 Bintul-Huda Memorial English School. All rights reserved.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
+              <a href="" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">

@@ -56,7 +56,7 @@ const About = () => {
             <h2 className="mb-6">Learn To Play, Converse With Confidence</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Nestled just 50 miles northeast of Bangalore, in the vibrant Kolar district of Karnataka, 
-              Alipur is home to nearly 18,000 residents. Here, Bintul-Huda Memorial School proudly became 
+              Alipur is home to nearly 18,000 residents. Here, Bintul-Huda Memorial English School proudly became 
               the first institution to offer English-medium education, opening doors to a brighter future 
               for countless children.
             </p>

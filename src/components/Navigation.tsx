@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun, Users, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
+import { Link } from "react-router-dom";
+import schoolLogo from "@/assets/school-logo.png"; // Replace with your actual logo image path
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,12 +19,17 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Programs", href: "#programs" },
+   
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "#about" },
     { name: "Alumni", href: "/alumni" },
-    { name: "Fee Structure", href: "#fee-structure" },
-    { name: "Contact", href: "#contact" },
+    { name: "Fee Structure", href: "/fee-structure" },
+  ];
+
+  // Mobile-specific links
+  const mobileLinks = [
+    { name: "Alumni", href: "/alumni", icon: Users },
+    { name: "Fee Structure", href: "/fee-structure", icon: DollarSign },
   ];
 
   const handleNavClick = (e, href) => {
@@ -53,12 +60,16 @@ const Navigation = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">BH</span>
+            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+              <img
+                src={schoolLogo}
+                alt="Bintul-Huda Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground">Bintul-Huda</span>
-              <span className="text-xs text-muted-foreground">Memorial School</span>
+              <span className="text-xs text-muted-foreground">Memorial English School</span>
             </div>
           </div>
 
@@ -84,9 +95,11 @@ const Navigation = () => {
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button className="bg-primary hover:bg-primary/90">
-              Apply Now
-            </Button>
+            <Link to="/admission">
+              <Button className="bg-primary hover:bg-primary/90">
+                Apply Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,20 +121,26 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="block text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {link.name}
-              </a>
-            ))}
-            <Button className="w-full bg-primary hover:bg-primary/90">
-              Apply Now
-            </Button>
+          <div className="md:hidden mt-4 py-4 space-y-1 bg-card shadow-lg rounded-lg border-b border-border px-3">
+            {mobileLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className="flex items-center space-x-3 text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium px-4 py-3 rounded-lg"
+                >
+                  <Icon className="h-5 w-5 text-muted-foreground" />
+                  <span>{link.name}</span>
+                </a>
+              );
+            })}
+            <Link to="/admission">
+              <Button className="w-full bg-primary hover:bg-primary/90 mt-2">
+                Apply Now
+              </Button>
+            </Link>
           </div>
         )}
       </div>

@@ -24,7 +24,7 @@ const ChairmanMessage = () => {
                 <div className="relative h-full min-h-[400px]">
                   <img
                     src={chairmanImage}
-                    alt="Chairman of Bintul-Huda Memorial School"
+                    alt="Chairman of Bintul-Huda Memorial English School"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent lg:bg-gradient-to-r"></div>
@@ -64,7 +64,7 @@ const ChairmanMessage = () => {
 
                   <div className="border-t border-border pt-6">
                     <p className="font-bold text-xl text-foreground">Chairman, Board of Trustees</p>
-                    <p className="text-muted-foreground">Bintul-Huda Memorial School</p>
+                    <p className="text-muted-foreground">Bintul-Huda Memorial English School</p>
                   </div>
                 </div>
               </div>

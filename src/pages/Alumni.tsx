@@ -127,16 +127,10 @@ const Alumni = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="relative min-h-screen pt-40 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <Link to="/">
-            <Button variant="ghost" className="mb-6 group">
-              <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" />
-              Back to Home
-            </Button>
-          </Link>
-
+            
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
               <GraduationCap className="w-5 h-5 text-primary" />
@@ -144,7 +138,7 @@ const Alumni = () => {
             </div>
             <h1 className="mb-6">Our Alumni Success Stories</h1>
             <p className="text-lg text-muted-foreground">
-              For nearly four decades, Bintul-Huda Memorial School has been shaping futures.
+              For nearly four decades, Bintul-Huda Memorial English School has been shaping futures.
               Our alumni stand as proud testimonies to the quality education and values we impart.
             </p>
           </div>

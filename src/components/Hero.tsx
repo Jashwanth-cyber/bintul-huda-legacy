@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-students.jpg";
-
+import { Link } from "react-router-dom";  
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen pt-32 pb-20 overflow-hidden">
@@ -20,17 +20,19 @@ const Hero = () => {
              Every Child holds <span className="text-primary">Potential</span> we help them shine.
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl">
-              Founded in 1985, Bintul-Huda Memorial School has been a beacon of hope and opportunity, 
+              Founded in 1985, Bintul-Huda Memorial English School has been a beacon of hope and opportunity, 
               delivering quality education to empower the next generation with knowledge and confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg group">
+              <Link to="/admission" className="bg-primary hover:bg-primary/90 text-lg group px-6 py-2 rounded-lg inline-flex items-center  justify-center">
                 Get Admission
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Learn More
-              </Button>
+              </Link>
+             <Link to="/gallery">
+              " <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                 Know More
+               </Button>
+             </Link>
             </div>
             
             {/* Quick Stats */}
@@ -51,7 +53,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <div className="relative animate-fade-in-up order-first lg:order-last" style={{ animationDelay: "0.4s" }}>
             <div className="relative">
               <div className="absolute -top-8 -right-8 w-full h-full bg-primary/20 rounded-[40px] blob-shape"></div>
               <img
