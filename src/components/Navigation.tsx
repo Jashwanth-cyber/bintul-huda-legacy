@@ -76,14 +76,14 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button
               variant="ghost"
