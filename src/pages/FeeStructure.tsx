@@ -83,14 +83,14 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button
               variant="ghost"
@@ -215,7 +215,7 @@ export default function FeeStructure() {
                 className="bg-card rounded-xl shadow-md border border-border p-6 text-center hover:shadow-lg transition-shadow duration-300"
               >
                 <img
-                  src={tier.image}
+                  src="/placeholder.svg" // Replace with actual image URL or asset
                   alt={`${tier.grades} students`}
                   className="w-full h-32 object-cover rounded-lg mb-4"
                 />

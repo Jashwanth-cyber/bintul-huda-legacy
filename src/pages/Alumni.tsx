@@ -170,7 +170,7 @@ export default function Alumni() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
-                  src={alumni.image}
+                  src="/placeholder.svg" // Replace with actual image URL or asset
                   alt="story"
                   className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-4xl mb-4 mx-auto object-cover"
                 />
