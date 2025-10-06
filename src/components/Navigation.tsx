@@ -19,7 +19,6 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-   
     { name: "Home", href: "/" },
     { name: "About Us", href: "#about" },
     { name: "Alumni", href: "/alumni" },
@@ -34,7 +33,7 @@ const Navigation = () => {
 
   const handleNavClick = (e, href) => {
     e.preventDefault();
-    // Only apply smooth scroll to anchor links (starting with #)
+    // Only handle smooth scroll for anchor links (starting with #)
     if (href.startsWith("#")) {
       const targetId = href.substring(1);
       const targetElement = document.getElementById(targetId);
@@ -45,10 +44,8 @@ const Navigation = () => {
         });
       }
       setIsMobileMenuOpen(false);
-    } else {
-      // For non-anchor links (like /alumni), use regular navigation
-      window.location.href = href;
     }
+    // For route links (e.g., /alumni), do NOTHING here—let <Link> handle via React Router
   };
 
   return (
@@ -78,8 +75,8 @@ const Navigation = () => {
             {navLinks.map((link) => (
               <Link
                 key={link.name}
-                to={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
+                to={link.href}  // Use 'to' for React Router
+                onClick={(e) => link.href.startsWith("#") && handleNavClick(e, link.href)}  // Fixed: Use 'link.href'
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 {link.name}
@@ -125,15 +122,15 @@ const Navigation = () => {
             {mobileLinks.map((link) => {
               const Icon = link.icon;
               return (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
+                  to={link.href}  // Use 'to' for React Router
+                  onClick={(e) => link.href.startsWith("#") && handleNavClick(e, link.href)}  // Fixed: Use 'link.href'
                   className="flex items-center space-x-3 text-foreground hover:text-primary hover:bg-accent/50 transition-all duration-200 font-medium px-4 py-3 rounded-lg"
                 >
                   <Icon className="h-5 w-5 text-muted-foreground" />
                   <span>{link.name}</span>
-                </a>
+                </Link>
               );
             })}
             <Link to="/admission">
