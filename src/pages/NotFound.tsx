@@ -5,6 +5,7 @@ import { Home, ArrowLeft, BookOpen, Search, Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom"; // For clean SPA navigation to home
 import { useTheme } from "next-themes";
 import confusedStudentImage from "@/assets/not-found.jpg"; // Add a school-themed image asset if available
+import schoolLogo from "@/assets/school-logo.png"; // Adjust path to your school logo asset
 import Footer from "@/components/Footer";
 
 const NotFound = () => {
@@ -36,7 +37,22 @@ const NotFound = () => {
         }`}
       >
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-between">
+            {/* School Logo and Title */}
+            <div className="flex items-center space-x-2">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
+                <img
+                  src={schoolLogo}
+                  alt="Bintul-Huda Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg text-foreground">Bintul-Huda</span>
+                <span className="text-xs text-muted-foreground">Memorial English School</span>
+              </div>
+            </div>
+            
             {/* Dark Mode Toggle + Go to Home */}
             <div className="flex items-center space-x-2 md:space-x-4">
               <Button
@@ -121,7 +137,7 @@ const NotFound = () => {
                     Go Back
                   </a>
                 </Button>
-              </div>
+              </div> 
             </div>
           </div>
         </div>

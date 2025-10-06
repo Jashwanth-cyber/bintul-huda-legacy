@@ -158,25 +158,25 @@ const Navigation = () => {
 export default function FeeStructure() {
   const feeTiers = [
     {
-      grades: "Kindergarten to Grade 2",
+      grades: "Kindergarten - Grade 2",
       amount: "14,000",
       description: "Annual tuition fee for foundational learning stages.",
       image: kindergartenImg,
     },
     {
-      grades: "3rd Std to 5th Std",
+      grades: "3rd Std - 5th Std",
       amount: "17,500",
       description: "Annual tuition fee for primary education.",
       image: primaryImg,
     },
     {
-      grades: "6th Std to 8th Std",
+      grades: "6th Std - 8th Std",
       amount: "18,500",
       description: "Annual tuition fee for middle school curriculum.",
       image: middleImg,
     },
     {
-      grades: "9th Std to 10th Std",
+      grades: "9th Std - 10th Std",
       amount: "19,500",
       description: "Annual tuition fee for secondary education (SSC preparation).",
       image: secondaryImg,
