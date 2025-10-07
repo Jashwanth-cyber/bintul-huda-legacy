@@ -16,13 +16,13 @@ import Footer from "@/components/Footer";
 const Gallery = () => {
   const galleryImages = [
     { src: galleryImg1, alt: "Students engaged in classroom activity", caption: "Interactive Learning" },
-    { src: galleryImg2, alt: "Sports day event", caption: "Physical Education" },
+    { src: galleryImg2, alt: "Sports day event", caption: "Cultural Celebrations" },
     { src: galleryImg3, alt: "Science lab experiment", caption: "Hands-on Science" },
-    { src: galleryImg4, alt: "Cultural program performance", caption: "Cultural Celebrations" },
-    { src: galleryImg5, alt: "Students reading in library", caption: "Library Sessions" },
-    { src: galleryImg6, alt: "Annual function stage", caption: "Annual Day" },
+    { src: galleryImg4, alt: "Cultural program performance", caption: "Cultural Activities" },
+    { src: galleryImg5, alt: "Students reading in library", caption: "Physical Education" },
+    { src: galleryImg6, alt: "Annual function stage", caption: "Sports Day" },
     { src: galleryImg7, alt: "Teacher guiding students", caption: "Mentorship Moments" },
-    { src: galleryImg8, alt: "Field trip exploration", caption: "Educational Outings" },
+    { src: galleryImg8, alt: "Field trip exploration", caption: "Educational Achievements" },
     { src: galleryImg9, alt: "Art class creativity", caption: "Creative Arts" },
   ];
 

@@ -1,5 +1,5 @@
 import { Quote } from "lucide-react";
-import chairmanImage from "@/assets/chairman.jpg";
+import chairmanImage from "@/assets/chairman.png";
 
 const ChairmanMessage = () => {
   return (
@@ -63,8 +63,8 @@ const ChairmanMessage = () => {
                   </div>
 
                   <div className="border-t border-border pt-6">
-                    <p className="font-bold text-xl text-foreground">Chairman, Board of Trustees</p>
-                    <p className="text-muted-foreground">Bintul-Huda Memorial English School</p>
+                    <p className="font-bold text-xl text-foreground">Mir Ali Reza</p>
+                    <p className="text-muted-foreground">Chairman, Board of Trustees</p>
                   </div>
                 </div>
               </div>
