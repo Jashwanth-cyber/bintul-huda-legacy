@@ -2,29 +2,31 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import Jaffer from "@/assets/Jaffer.jpg";
+import Mannan from "@/assets/Mannan.jpg";
+import Hasnath from "@/assets/Hasnath.jpg";
 
 const AlumniPreview = () => {
   const successStories = [
     {
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me.",
-      image: "👨‍⚕️"
+      name: "Syed Mannan Raza",
+      year: "1997-1998 batch",
+      achievement: "Bachelor of Engineering ",
+      story: "The campus itself was vast and lively, with enough space for us to engage in different sports such as cricket, badminton, and kho-kho. Beyond academics, my teachers encouraged me to learn Hindi, even though it was not part of our curriculum at that time. That encouragement stayed with me, and today it has become a valuable skill that allows me to teach my own children.",
+      image: Mannan
     },
     {
-      name: "Mohammed Farhan",
-      year: "Class of 2012",
-      achievement: "Software Engineer at Tech Mahindra",
+      name: "Mohammed Jaffer",
+      year: "2011-12 batch",
+      achievement: "Bachelor of Engineering",
       story: "My years at this school have been a wonderful journey of learning and growth. The principal, teachers, and staff have always been supportive, approachable, and truly dedicated to the success of every student. Their constant encouragement not only strengthened my academics but also helped me build confidence and values that I will carry for life. I feel proud and grateful to have been part of such a caring and inspiring school community.",
       image: Jaffer
     },
     {
-      name: "Fatima Khanum",
-      year: "Class of 2015",
-      achievement: "Entrepreneur & Business Owner",
-      story: "Bintul-Huda taught me more than academics—it taught me confidence. Today, I run my own successful business in Bangalore.",
-      image: "👩‍💼"
+      name: "Hasnath Ahmed Syeda",
+      year: "1997-98 first batch",
+      achievement: "",
+      story: "My school days remain some of the most memorable and formative years of my life. One of the things that stood out most was the dedication and cooperation of my teachers. They were always encouraging, approachable, and supportive, creating an environment where learning felt natural and enjoyable.",
+      image: Hasnath
     }
   ];
 

@@ -13,95 +13,49 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-
+import Mannan from "@/assets/Mannan.jpg";
+import Jaffer from "@/assets/Jaffer.jpg";
+import Hasnath from "@/assets/Hasnath.jpg";
+import Zaffer from "@/assets/Zaffer.jpg";
 export default function Alumni() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
   const allAlumni = [
     {
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
+     name: "Syed Mannan Raza",
+      year: "1997-1998 batch",
+      achievement: "Bachelor of Engineering ",
+      story: "The campus itself was vast and lively, with enough space for us to engage in different sports such as cricket, badminton, and kho-kho. Beyond academics, my teachers encouraged me to learn Hindi, even though it was not part of our curriculum at that time. That encouragement stayed with me, and today it has become a valuable skill that allows me to teach my own children.",
+      image: Mannan,
+      category: "Engineering"
     },
+      
     {
-      name: "Mohammed Farhan",
-      year: "Class of 2012",
-      achievement: "Software Engineer at Tech Mahindra",
-      story: "The foundation in English and computer education I received here opened doors to opportunities I never imagined possible. Starting with basic computer classes at Bintul-Huda, I now work on projects that impact millions of users globally.",
-      image: "👨‍💻",
+      name: "Mohammed Jaffer",
+      year: "2011-12 batch",
+      achievement: "Bachelor of Engineering",
+      story: "My years at this school have been a wonderful journey of learning and growth. The principal, teachers, and staff have always been supportive, approachable, and truly dedicated to the success of every student. Their constant encouragement not only strengthened my academics but also helped me build confidence and values that I will carry for life. I feel proud and grateful to have been part of such a caring and inspiring school community.",
+      image: Jaffer,
       category: "Technology"
     },
     {
-      name: "Fatima Khanum",
-      year: "Class of 2015",
-      achievement: "Entrepreneur & Business Owner",
-      story: "Bintul-Huda taught me more than academics—it taught me confidence. Today, I run my own successful business in Bangalore, employing over 20 people. The entrepreneurial spirit was nurtured here, in this very campus.",
-      image: "👩‍💼",
+       name: "Hasnath Ahmed Syeda",
+      year: "1997-98 first batch",
+      achievement: "Enterpreneur & Business Owner",
+      story: "My school days remain some of the most memorable and formative years of my life. One of the things that stood out most was the dedication and cooperation of my teachers. They were always encouraging, approachable, and supportive, creating an environment where learning felt natural and enjoyable.",
+      image: Hasnath,
       category: "Business"
     },
     {
-      name: "Ahmed Khan",
-      year: "Class of 2010",
-      achievement: "Civil Engineer, L&T Construction",
-      story: "The strong foundation in mathematics and sciences prepared me for engineering excellence. Today, I contribute to building India's infrastructure, and it all started with the quality education at Bintul-Huda.",
-      image: "👷",
-      category: "Engineering"
+       name: "Syed Zaffer Ahmed",
+      year: "2012-13 batch",
+      achievement: "Bachelor of Pharmacy",
+      story: "Bintul huda not only given me the education but taught me value of time, value of respect, value of competition, growth etc. A school which shaped me",
+      image: Zaffer,
+      category: "Business"
     },
-    {
-      name: "Zainab Begum",
-      year: "Class of 2013",
-      achievement: "Teacher at International School",
-      story: "Inspired by my teachers at Bintul-Huda, I chose to become an educator myself. Now teaching in an international school, I carry forward the legacy of quality education that shaped my life.",
-      image: "👩‍🏫",
-      category: "Education"
-    },
-    {
-      name: "Salman Ahmed",
-      year: "Class of 2011",
-      achievement: "Chartered Accountant",
-      story: "The discipline and analytical thinking developed at Bintul-Huda helped me excel in finance. As a CA, I now help businesses grow while giving back to my community.",
-      image: "👨‍💼",
-      category: "Finance"
-    },{
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
-    },{
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
-    },{
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
-    },{
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
-    },{
-      name: "Dr. Ayesha Rahman",
-      year: "Class of 2008",
-      achievement: "Medical Doctor at Apollo Hospital",
-      story: "From the classrooms of Bintul-Huda to serving patients across Karnataka, my journey began here with dedicated teachers who believed in me. The values of compassion and excellence instilled during my school years continue to guide my medical practice today.",
-      image: "👨‍⚕️",
-      category: "Healthcare"
-    },
+   
   ];
 
   const stats = [
@@ -170,7 +124,7 @@ export default function Alumni() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img
-                  src="/placeholder.svg" // Replace with actual image URL or asset
+                  src={alumni.image}
                   alt="story"
                   className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-4xl mb-4 mx-auto object-cover"
                 />
