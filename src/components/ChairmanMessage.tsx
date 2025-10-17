@@ -50,14 +50,14 @@ const ChairmanMessage = () => {
                   
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                     The dedication and commitment of our staff to upholding the highest standards of 
-                    education have been instrumental in shaping Binhal Huda into a center of excellence, 
+                    education have been instrumental in shaping Bintul Huda into a center of excellence, 
                     known for its holistic approach to learning.
                   </p>
 
                   <div className="bg-primary/5 rounded-2xl p-6 mb-8">
                     <p className="text-base text-foreground italic">
                       "We extend our heartfelt gratitude to all our donors and well-wishers who have 
-                      been an integral part of the Binhal Huda journey. Your support continues to 
+                      been an integral part of the Bintul Huda journey. Your support continues to 
                       inspire us to reach greater heights."
                     </p>
                   </div>
