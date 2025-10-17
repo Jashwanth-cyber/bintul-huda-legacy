@@ -7,6 +7,7 @@ import Programs from "@/components/Programs";
 import AlumniPreview from "@/components/AlumniPreview";
 import ChairmanMessage from "@/components/ChairmanMessage";
 import Footer from "@/components/Footer";
+import Admission from "./AdmissionHome";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Programs />
       <AlumniPreview />
       <ChairmanMessage />
+      <Admission />
       <Footer />
     </div>
   );

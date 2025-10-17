@@ -44,7 +44,7 @@ export default function Alumni() {
       year: "1997-98 first batch",
       achievement: "Enterpreneur & Business Owner",
       story: "My school days remain some of the most memorable and formative years of my life. One of the things that stood out most was the dedication and cooperation of my teachers. They were always encouraging, approachable, and supportive, creating an environment where learning felt natural and enjoyable.",
-      image: Hasnath,
+      image: "/placeholder.svg",
       category: "Business"
     },
     {
@@ -175,7 +175,7 @@ export default function Alumni() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+      {/* <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="mb-6">Are You an Alumni?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -185,7 +185,7 @@ export default function Alumni() {
             Share Your Story
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

@@ -34,11 +34,11 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
-              <li><a href="#about" className="text-sm opacity-80 hover:opacity-100 transition-opacity">About Us</a></li>
-              <li><a href="#programs" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Programs</a></li>
-              <li><a href="#chairman" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Chairman's Message</a></li>
-              <li><a href="#contact" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Contact</a></li>
+              <li><a href="/" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
+               <li><a href="/alumni" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Alumni</a></li>
+              <li><a href="/gallery" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Our Gallery</a></li>
+              <li><a href="/fee-structure" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Fee Structure</a></li>
+              <li><a href="/admission" className="text-sm opacity-80 hover:opacity-100 transition-opacity">Admissions</a></li>
             </ul>
           </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <p className="text-sm opacity-80">+91 XXXX XXXXXX</p>
+                <a href="tel:+918155289228" className="text-sm opacity-80">+91 8155289228</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
@@ -81,13 +81,18 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm opacity-80">
-              © 2025 Bintul-Huda Memorial English School. All rights reserved.
+              © 2025 Bintul-Huda Memorial English School | All rights reserved.
             </p>
+            <div className="flex items-center space-x-4">
+              <p className="text-sm opacity-80">Privacy Policy</p>
+              <p className="text-sm opacity-80">Terms of Service</p>
+              <a href="tel:+918155289228" className="text-sm opacity-80">Contact Us</a>
+            </div>
             <div className="flex space-x-4">
-              <a href="" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
+              <a href="https://www.facebook.com/bintulhudamemorialschool/" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
@@ -95,8 +100,9 @@ const Footer = () => {
               </a>
               <a href="#" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors">
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
+
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Quote } from "lucide-react";
-import chairmanImage from "@/assets/chairman.png";
+import chairmanImage from "@/assets/Chairman.jpeg";
 
 const ChairmanMessage = () => {
   return (
@@ -37,7 +37,7 @@ const ChairmanMessage = () => {
                 
                 <div className="relative z-10">
                   <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                    Binhal Huda is a vision that has remained unwavering over the years. Despite inherent 
+                    Bintul Huda is a vision that has remained unwavering over the years. Despite inherent 
                     challenges, we have continued to nurture the intent and vitality to empower young minds 
                     through the finest quality of education.
                   </p>

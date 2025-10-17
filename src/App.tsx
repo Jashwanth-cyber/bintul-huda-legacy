@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Admission from "./pages/Admission";
 import FeeStructure from "./pages/FeeStructure";
 import Gallery from "./pages/Gallery";
+import ScrollToTop from "./ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <ScrollToTop />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />

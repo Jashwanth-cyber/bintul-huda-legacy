@@ -3,7 +3,7 @@ import { ArrowRight, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 import Jaffer from "@/assets/Jaffer.jpg";
 import Mannan from "@/assets/Mannan.jpg";
-import Hasnath from "@/assets/Hasnath.jpg";
+import Zaffer from "@/assets/Zaffer.jpg";
 
 const AlumniPreview = () => {
   const successStories = [
@@ -22,12 +22,13 @@ const AlumniPreview = () => {
       image: Jaffer
     },
     {
-      name: "Hasnath Ahmed Syeda",
-      year: "1997-98 first batch",
-      achievement: "",
-      story: "My school days remain some of the most memorable and formative years of my life. One of the things that stood out most was the dedication and cooperation of my teachers. They were always encouraging, approachable, and supportive, creating an environment where learning felt natural and enjoyable.",
-      image: Hasnath
-    }
+       name: "Syed Zaffer Ahmed",
+      year: "2012-13 batch",
+      achievement: "Bachelor of Pharmacy",
+      story: "Bintul huda not only given me the education but taught me value of time, value of respect, value of competition, growth etc. A school which shaped me",
+      image: Zaffer,
+      
+    },
   ];
 
   return (

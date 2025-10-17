@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-students.jpg";
+import heroImage from "@/assets/hero.jpg";
 import { Link } from "react-router-dom";  
 const Hero = () => {
   return (
@@ -30,7 +30,7 @@ const Hero = () => {
               </Link>
              <Link to="/gallery">
                <Button size="lg" variant="outline" className="text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Know More
+                Our Gallery
                </Button>
              </Link>
             </div>

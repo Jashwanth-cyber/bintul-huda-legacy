@@ -133,37 +133,9 @@ const Admission = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className=" bg-background">
       {/* Simplified Navigation for Admission Page */}
-      <nav className="fixed top-0 w-full z-50 bg-card/95 backdrop-blur-md shadow-lg py-4 border-b border-border">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.location.href = "/"}>
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center overflow-hidden">
-                <img
-                  src={schoolLogo}
-                  alt="Bintul-Huda Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-base text-foreground">Bintul-Huda</span>
-                <span className="text-xs text-muted-foreground">Memorial English School</span>
-              </div>
-            </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:hidden" />
-              <Moon className="h-5 w-5 rotate-90 scale-0 transition-all dark:block dark:rotate-0 dark:scale-100" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-          </div>
-        </div>
-      </nav>
-
+      
       {/* Main Admission Content */}
       <div className="pt-20 pb-12">
         <div className="container mx-auto px-4 py-10 md:px-6">
@@ -495,7 +467,7 @@ const Admission = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 // Placeholder image imports - replace with actual gallery images in your assets folder
-import galleryImg1 from "@/assets/gallery-1.jpg"; // e.g., classroom activity
+import galleryImg1 from "@/assets/Craft.jpg"; // e.g., classroom activity
 import galleryImg2 from "@/assets/gallery-2.jpg"; // e.g., sports day
 import galleryImg3 from "@/assets/gallery-3.jpg"; // e.g., science lab
 import galleryImg4 from "@/assets/gallery-4.jpg"; // e.g., cultural event
@@ -81,9 +81,9 @@ const Gallery = () => {
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "0.9s" }}>
           <p className="text-muted-foreground mb-6">Want to see more? Visit our campus or join our community.</p>
-          <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground">
+          <a href="tel:+918155289228" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground p-3 rounded-lg inline-block font-semibold ">
             Schedule a Visit
-          </Button>
+          </a>
         </div>
       </div>
 
